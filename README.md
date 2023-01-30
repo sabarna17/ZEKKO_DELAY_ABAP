@@ -10,4 +10,4 @@ RAP Based Easy application creation for delay recording of the Purchase Orders
 
 1. Right click on the CDS Entity(ZC_EKKO_DMO) & click on Metadata Extension. Metadata Extension: ZC_EKKO_DMO. Script: [Click here](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZC_EKKO_DMO_ME.abap)
 2. Right click on CDS Entity(ZI_EKKO_DMO) & click on New Service Definition. Service Definition: ZI_EKKO_DMO_SRV. Script: [Click here](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV.abap)
-3. Right click on Service(ZI_EKKO_DMO_SRV) & click on New Service Binding. Service Binding: ZI_EKKO_DMO_SRV. Script: [Click here](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV_BIND.jpg). Once Created click on Publish and navigate to the DelayedPO entityset.
+3. Right click on Service(ZI_EKKO_DMO_SRV) & click on New Service Binding. Service Binding: ZI_EKKO_DMO_SRV. Image: [Click here](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV_BIND.jpg). Once Created click on Publish and navigate to the DelayedPO entityset.
