@@ -16,3 +16,8 @@ RAP Based Easy application creation for delay recording of the Purchase Orders
 This has to be same as the **CDS View Entity** name for **CDS View Entity Behaviour Definition** & **Projection view** name for **Projection view Behaviour Definition**
 1. Right click on the CDS View entity(ZI_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_BD.abap)
 2. Right click on the Projection View(ZC_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZC_EKKO_DMO_BD.abap)
+
+## Note:
+1. In metadata extension, Add additionalBinding to add dependency on the F4 help value on the dependent fields - 'supplier' & 'supplier_name'.
+2. Add fields as readonly settings in behaviour definition [ZI_EKKO_DMO](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/edit/main/ZI_EKKO_DMO_BD.abap) as 
+  > field( readonly ) OldDeliveryDate;
