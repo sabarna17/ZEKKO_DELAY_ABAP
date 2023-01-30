@@ -1,5 +1,5 @@
 managed;
-
+// behaviour definition
 define behavior for ZI_EKKO_DMO alias DelayedPO
 persistent table zekko_dmo
 lock master
