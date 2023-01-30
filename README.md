@@ -2,7 +2,8 @@
 RAP Based Easy application creation for delay recording of the Purchase Orders
 ## Create CDS Table | CDS View | CDS Entite | Projection View
 1.	Create CDS table – ZEKKO_DMO
-< @EndUserText.label : 'Ekko dmo'
+<br>
+@EndUserText.label : 'Ekko dmo'
 @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
 @AbapCatalog.tableCategory : #TRANSPARENT
 @AbapCatalog.deliveryClass : #A
@@ -16,4 +17,4 @@ define table zekko_dmo {
   action_ts     : timestampl;
   comments      : abap.char(100);
 
-} >
+}
