@@ -30,15 +30,15 @@ annotate view ZC_EKKO_DMO with
 //  @Consumption.valueHelpDefinition: [{ entity: { element : 'Supplier', name: 'ZCDS_EKKO_DMO' } }]  
   supplier;
   @UI: {  lineItem:       [ { position: 30 } , { label: 'Supplier Name' } ],
-          identification: [ { position: 30 } ],
+          identification: [ { position: 30 , label: 'Supplier Name' } ],
           selectionField: [ { position: 30 } ] }  
   supplier_name;  
   @UI: {  lineItem:       [ { position: 40 }, { label: 'Delivery Date' } ],
-          identification: [ { position: 40 } ] }
+          identification: [ { position: 40, label: 'Delivery Date' } ] }
   DelivDate;
   
   @UI: {  lineItem:       [ { position: 50 }, { label: 'Old Delivery Date' } ],
-          identification: [ { position: 50 } ] }  
+          identification: [ { position: 50 , label: 'Old Delivery Date' } ] }  
   OldDeliveryDate;
   
   @UI: {  lineItem:       [ { position: 60 } ],
