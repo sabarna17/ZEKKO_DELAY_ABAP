@@ -1,5 +1,8 @@
 # ZEKKO_DELAY_ABAP
 RAP Based Easy application creation for delay recording of the Purchase Orders
+## Preface
+This is a basic application to log the delay of a PO. This app also covers the execution of the Adobe Form from RAP Process executions.
+
 ## Step 1 - Create CDS Table | CDS View | CDS Entite | Projection View
 1.	Create CDS table – ZEKKO_DMO. [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zekko_dmo.abap)
 2.	Create custom CDS View for EKKO and LIFNR mappings. [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZCDS_EKKO_DMO.abap). Now execute this DDL View(ZDDL_EKKO_DMO) from SE16n and see the values. Here is another CDS View to calculate the final delivery date from EKET. [ZCDS_EKKO_DELIV_DMO](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZCDS_EKKO_DELIV_DMO.abap)
