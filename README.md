@@ -17,7 +17,7 @@ This is a basic application to log the delay of a PO. This app also covers the e
    Service Binding: ZI_EKKO_DMO_SRV. ![Image](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV_BIND.jpg). 
    Once Created click on Publish and navigate to the DelayedPO entityset.
 
-## Step 3 - Behaviour Definitions
+## Step 3 - Behavior Definitions
 This has to be same as the **CDS View Entity** name for **CDS View Entity Behaviour Definition** & **Projection view** name for **Projection view Behaviour Definition**
 1. Right click on the CDS View entity(ZI_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_BD.abap)
 2. Right click on the Projection View(ZC_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZC_EKKO_DMO_BD.abap)
@@ -30,10 +30,9 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 3. Create the behaviour definitions with the same name as - the CDS View Entity and Projection view name
 
 ## Step 4 - Test Read operations:
-
    Create a simple class as below to read the Table data: [zcl_ekko_del](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_ekko_del.abap)
 
-## Step 5 - Create Behaviour Custon Implementation
+## Step 5 - Create Behavior Custom Implementation
 1. Do the below changes in the Behaviour of - 
    
    ### ZC_EKKO_DMO
