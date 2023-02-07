@@ -13,7 +13,9 @@ This is a basic application to log the delay of a PO. This app also covers the e
 
 1. Right click on the CDS Entity(ZC_EKKO_DMO) & click on Metadata Extension. Metadata Extension: ZC_EKKO_DMO. [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZC_EKKO_DMO_ME.abap)
 2. Right click on CDS Entity(ZI_EKKO_DMO) & click on New Service Definition. Service Definition: ZI_EKKO_DMO_SRV. [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV.abap)
-3. Right click on Service(ZI_EKKO_DMO_SRV) & click on New Service Binding. Service Binding: ZI_EKKO_DMO_SRV. ![Image](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV_BIND.jpg). Once Created click on Publish and navigate to the DelayedPO entityset.
+3. Right click on Service(ZI_EKKO_DMO_SRV) & click on New Service Binding. 
+   Service Binding: ZI_EKKO_DMO_SRV. ![Image](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_SRV_BIND.jpg). 
+   Once Created click on Publish and navigate to the DelayedPO entityset.
 
 ## Step 3 - Behaviour Definitions
 This has to be same as the **CDS View Entity** name for **CDS View Entity Behaviour Definition** & **Projection view** name for **Projection view Behaviour Definition**
@@ -29,14 +31,14 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 1. Do the below changes in the Behaviour of - 
    
    ### ZC_EKKO_DMO
-   >define behavior for ZC_EKKO_DMO alias DelayedPO
-   >implementation in class zcl_cekko_del_bd unique
-   >{
-   >   use create;
-   >   use update;
-   >   use delete;
-   >   action SENDEMAIL result [1] $self;
-   >}
+   <-- define behavior for ZC_EKKO_DMO alias DelayedPO
+   implementation in class zcl_cekko_del_bd unique
+   {
+      use create;
+      use update;
+      use delete;
+      action SENDEMAIL result [1] $self;
+   } -->
 
 2. Do the below changes in the Behaviour of - 
    ### ZI_EKKO_DMO
