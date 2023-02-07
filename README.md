@@ -23,7 +23,7 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 ## Note:
 1. In metadata extension, Add additionalBinding to add dependency on the F4 help value on the dependent fields - 'supplier' & 'supplier_name'.
 2. Add fields as readonly settings in behaviour definition [ZI_EKKO_DMO](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/edit/main/ZI_EKKO_DMO_BD.abap) as 
-  > field( readonly ) OldDeliveryDate;
+    > field( readonly ) OldDeliveryDate;
 
 ## Step 4 - Create Behaviour Custon Implementation
 1. Do the below changes in the Behaviour of - 
