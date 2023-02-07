@@ -31,14 +31,15 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 1. Do the below changes in the Behaviour of - 
    
    ### ZC_EKKO_DMO
-   <!-- define behavior for ZC_EKKO_DMO alias DelayedPO
+   ``` define behavior for ZC_EKKO_DMO alias DelayedPO
    implementation in class zcl_cekko_del_bd unique
    {
       use create;
       use update;
       use delete;
       action SENDEMAIL result [1] $self;
-   } -->
+   } 
+   ```
 
 2. Do the below changes in the Behaviour of - 
    ### ZI_EKKO_DMO
