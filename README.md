@@ -22,12 +22,18 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 1. Right click on the CDS View entity(ZI_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZI_EKKO_DMO_BD.abap)
 2. Right click on the Projection View(ZC_EKKO_DMO) and create **Behaviour definition**. CDS View Entity Behaviour Definition: [Script](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/ZC_EKKO_DMO_BD.abap)
 
+
 ## Note:
 1. In metadata extension, Add additionalBinding to add dependency on the F4 help value on the dependent fields - 'supplier' & 'supplier_name'.
 2. Add fields as readonly settings in behaviour definition [ZI_EKKO_DMO](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/edit/main/ZI_EKKO_DMO_BD.abap) as 
     > field( readonly ) OldDeliveryDate;
+3. Create the behaviour definitions with the same name as - the CDS View Entity and Projection view name
 
-## Step 4 - Create Behaviour Custon Implementation
+## Step 4 - Test Read operations:
+
+   Create a simple class as below to read the Table data: [zcl_ekko_del](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_ekko_del.abap)
+
+## Step 5 - Create Behaviour Custon Implementation
 1. Do the below changes in the Behaviour of - 
    
    ### ZC_EKKO_DMO
@@ -74,9 +80,10 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
       }
    }
    ```
-## Step 5 - Change in Metdata Definition
+## Step 6 - Change in Metdata Definition
    ### ZC_EKKO_DMO
    ```
+   
    @Metadata.layer: #CORE
    @UI: {
         headerInfo: { typeName: 'DelayedPO',
@@ -134,9 +141,9 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
                                     ,{ type: #FOR_ACTION, dataAction: 'SENDEMAIL', label: 'Send Spool' } ] ,
                 identification: [ { position: 80, label: 'Send Spool' }]}  
         Sendemailstatus;  
-      }   
+   }  
    ```
-## Step 6 - Implement Behaviour methods
+## Step 7 - Implement Behaviour methods
    ### zcl_cekko_del_bd
    Use quickfix options in the Behaviour definition: ZC_EKKO_DMO, implement the class with the local class inheritation. Then implement the code as given here:
    [zcl_cekko_del_bd](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_cekko_del_bd%3Elhc_DelayedPO.abap)
@@ -145,4 +152,15 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
    Use quickfix options in the Behaviour definition: ZI_EKKO_DMO, implement the class with the local class inheritation. Then implement the code as given here:
    [zcl_cekko_del_bd](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_cekko_del_bd%3Elhc_DelayedPO.abap)
    
-   
+## Step 8 - Create a sample SFP Adobe Form
+   ### ZAF_TEST_PO_DEL_DELAY
+   This adobe form is having below importing parameters:
+   ```
+   IV_PO
+   IV_DATE
+   IV_NAME
+   IV_COMMENT
+   ```
+ 
+## Step 9 - Test your program
+
