@@ -31,7 +31,9 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
 1. Do the below changes in the Behaviour of - 
    
    ### ZC_EKKO_DMO
-   ``` define behavior for ZC_EKKO_DMO alias DelayedPO
+   ``` 
+   projection;
+   define behavior for ZC_EKKO_DMO alias DelayedPO
    implementation in class zcl_cekko_del_bd unique
    {
       use create;
