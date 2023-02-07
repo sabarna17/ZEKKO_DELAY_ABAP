@@ -75,7 +75,7 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
    }
    ```
 ## Step 5 - Change in Metdata Definition
-   ### 
+   ### ZC_EKKO_DMO
    ```
    @Metadata.layer: #CORE
    @UI: {
@@ -134,5 +134,15 @@ This has to be same as the **CDS View Entity** name for **CDS View Entity Behavi
                                     ,{ type: #FOR_ACTION, dataAction: 'SENDEMAIL', label: 'Send Spool' } ] ,
                 identification: [ { position: 80, label: 'Send Spool' }]}  
         Sendemailstatus;  
-   }   
+      }   
    ```
+## Step 6 - Implement Behaviour methods
+   ### zcl_cekko_del_bd
+   Use quickfix options in the Behaviour definition: ZC_EKKO_DMO, implement the class with the local class inheritation. Then implement the code as given here:
+   [zcl_cekko_del_bd](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_cekko_del_bd%3Elhc_DelayedPO.abap)
+   
+   ### zcl_ekko_del_bd
+   Use quickfix options in the Behaviour definition: ZI_EKKO_DMO, implement the class with the local class inheritation. Then implement the code as given here:
+   [zcl_cekko_del_bd](https://github.com/sabarna17/ZEKKO_DELAY_ABAP/blob/main/zcl_cekko_del_bd%3Elhc_DelayedPO.abap)
+   
+   
